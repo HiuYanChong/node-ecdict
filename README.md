@@ -1,2 +1,3 @@
 # node-ecdict
-Node.js Interface for ECDICt
+Node.js Interface for ECDICT
+
