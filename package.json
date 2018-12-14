@@ -1,0 +1,27 @@
+{
+  "name": "node-ecdict",
+  "version": "0.0.1",
+  "description": "Node.js Interface for ECDICT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [
+    "Chinese",
+    "English",
+    "Translation",
+    "Dictionary"
+  ],
+  "author": "HiuYanChong<sysu_se_zxx@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sequelize": "^4.42.0",
+    "sqlite3": "^4.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "mocha": "^5.2.0"
+  }
+}
