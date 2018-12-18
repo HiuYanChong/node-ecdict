@@ -5,8 +5,7 @@ install:
   - yarn cache clean
   - rm yarn.lock
   - yarn global add codecov
-  - yarn install --verbose
+  - yarn install
 scripts:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter test -- -R spec && codecov
   - yarn test
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
