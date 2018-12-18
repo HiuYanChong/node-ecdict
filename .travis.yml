@@ -4,6 +4,9 @@ node_js:
 install:
   - yarn cache clean
   - rm yarn.lock
+  - yarn install -g codecov
   - yarn install --verbose
 scripts:
   - yarn test
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
