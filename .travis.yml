@@ -4,7 +4,7 @@ node_js:
 install:
   - yarn cache clean
   - rm yarn.lock
-  - yarn install -g codecov
+  - yarn global add codecov
   - yarn install --verbose
 scripts:
   - yarn test
