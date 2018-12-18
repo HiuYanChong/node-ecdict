@@ -15,6 +15,10 @@
     "Dictionary"
   ],
   "author": "HiuYanChong<sysu_se_zxx@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiuYanChong/node-ecdict.git"
+  },
   "license": "MIT",
   "dependencies": {
     "sequelize": "^4.42.0",
