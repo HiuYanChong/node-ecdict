@@ -2,7 +2,7 @@
 
 Node.js Interface for ECDICT
 
-[![npm version](https://img.shields.io/npm/v/node-ecdict.svg)](https://www.npmjs.com/package/node-ecdict) [![Build Status](https://travis-ci.org/HiuYanChong/node-ecdict.svg?branch=master)](https://travis-ci.org/HiuYanChong/node-ecdict)
+[![npm version](https://img.shields.io/npm/v/node-ecdict.svg)](https://www.npmjs.com/package/node-ecdict) [![Build Status](https://travis-ci.org/HiuYanChong/node-ecdict.svg?branch=master)](https://travis-ci.org/HiuYanChong/node-ecdict) [![codecov](https://codecov.io/gh/HiuYanChong/node-ecdict/branch/master/graph/badge.svg)](https://codecov.io/gh/HiuYanChong/node-ecdict)
 
 ## 简介
 
