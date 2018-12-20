@@ -4,6 +4,6 @@ node_js:
 install:
   - yarn cache clean
   - rm yarn.lock
-  - yarn install --verbose
+  - yarn install
 scripts:
-  - yarn test
+  - yarn test-cov
