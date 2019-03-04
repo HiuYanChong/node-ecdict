@@ -23,7 +23,7 @@ search('test')
     console.log(result);
   });
 
-batSearch(['test', 'nothing', 'asjlfdjal'])
+batchSearch(['test', 'nothing', 'asjlfdjal'])
   .then(result => {
     console.log(result); // result is an Array
   });
