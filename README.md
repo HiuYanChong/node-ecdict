@@ -17,11 +17,16 @@ npm install --save node-ecdict
 ```
 
 ```js
-const { search } = require('node-ecdict');
+const { search, batchSearch } = require('node-ecdict');
 search('test')
   .then(result => {
     console.log(result);
-  })
+  });
+
+batSearch(['test', 'nothing', 'asjlfdjal'])
+  .then(result => {
+    console.log(result); // result is an Array
+  });
 ```
 
 ## License
