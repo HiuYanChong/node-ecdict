@@ -1,7 +1,7 @@
 const assert = require('assert');
-const { search } = require('../index');
+const { search, batchSearch } = require('../index');
 
-describe('node-ecdict', () => { 
+describe('node-ecdict', () => {
   describe('search word', () => {
     it('should search word normally', () => {
       search('test')
@@ -24,11 +24,48 @@ describe('node-ecdict', () => {
     })
   })
 
-  describe('search nothing', () => { 
+  describe('search nothing', () => {
     it('search nothing normally', () => {
       search('')
         .then(result => {
           assert(result.length === 0);
+        })
+    });
+  })
+
+  describe('batch search', () => {
+    it('search batch normally', () => {
+      batchSearch(['flower', 'words', 'woishf', 'oq'])
+        .then(result => {
+          assert(result.length === 4);
+        })
+    });
+  })
+
+
+  describe('batch search with a word has no result', () => {
+    it('search batch a word normally', () => {
+      batchSearch(['woishf'])
+        .then(result => {
+          assert(result.length === 1);
+        })
+    });
+  })
+
+  describe('batch search without array', () => {
+    it('search batch a word normally', () => {
+      batchSearch({ a: 111 })
+        .catch(e => {
+          assert(e);
+        })
+    });
+  })
+
+  describe('batch search with a empty array', () => {
+    it('search batch a word normally', () => {
+      batchSearch([])
+        .catch(e => {
+          assert(e);
         })
     });
   })
